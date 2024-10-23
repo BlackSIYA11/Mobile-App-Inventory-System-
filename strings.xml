@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Inventory Management App</string>
+        <string-array name="text_size_options">
+            <item>Small</item>
+            <item>Medium</item>
+            <item>Large</item>
+        </string-array>
+
+</resources>
