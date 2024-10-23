@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- TextView to display help instructions -->
+    <TextView
+        android:id="@+id/textViewInstructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="8dp"
+    android:text="Help Instructions will be displayed here."
+    android:textColor="@android:color/black"
+    android:textSize="16sp" />
+
+    <!-- Button to close the Help activity, aligned to the bottom of the layout -->
+    <Button
+        android:id="@+id/buttonCloseHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return to Home Page"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

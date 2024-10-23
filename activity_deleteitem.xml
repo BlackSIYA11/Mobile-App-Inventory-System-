@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Search EditText -->
+    <EditText
+        android:id="@+id/editTextSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search by ID or Name"
+        android:minHeight="48dp"
+        android:padding="12dp" />
+
+    <!-- Search Button -->
+    <Button
+        android:id="@+id/buttonSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search Item"
+        android:minHeight="48dp"
+        android:padding="12dp" />
+
+    <!-- ItemID EditText (read-only after search) -->
+    <EditText
+        android:id="@+id/editTextItemID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Item ID(e.g SAND101)"
+        android:padding="12dp"
+        android:inputType="none"
+        android:enabled="false" />
+
+    <!-- Item Name EditText -->
+    <EditText
+        android:id="@+id/editTextItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Item Name"
+        android:padding="12dp" />
+
+    <!-- Price EditText -->
+    <EditText
+        android:id="@+id/editTextPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Price(e.g 100)"
+        android:padding="12dp"
+        android:inputType="numberDecimal" />
+
+    <!-- Quantity EditText -->
+    <EditText
+        android:id="@+id/editTextQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quantity"
+        android:padding="12dp"
+        android:inputType="number" />
+
+    <!-- Description EditText -->
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:padding="12dp" />
+
+    <!-- Delete Item Button -->
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Item"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:enabled="false" />
+
+    <!-- Return to Menu Button -->
+    <Button
+        android:id="@+id/buttonReturnToMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return to Menu"
+        android:minHeight="48dp"
+        android:padding="12dp" />
+
+</LinearLayout>

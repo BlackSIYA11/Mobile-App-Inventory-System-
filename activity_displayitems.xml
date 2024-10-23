@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayItems">
+
+    <!-- Return to Menu Button -->
+    <Button
+        android:id="@+id/buttonReturnToMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return to Menu"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Display Total Amount Button -->
+    <Button
+        android:id="@+id/buttonDisplayTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Display Total Amount"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintStart_toEndOf="@id/buttonReturnToMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/buttonReturnToMenu" />
+
+    <!-- Clear Total Amount Button -->
+    <Button
+        android:id="@+id/buttonClearTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear Total Amount"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/buttonDisplayTotal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- View Items Button -->
+    <Button
+        android:id="@+id/buttonViewItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Items"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/buttonClearTotal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- TextView for Total Amount -->
+    <TextView
+        android:id="@+id/textViewTotalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Amount: R0.00"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/buttonViewItems"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- LinearLayout for Displaying Items -->
+    <LinearLayout
+        android:id="@+id/layoutItemsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/textViewTotalAmount"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

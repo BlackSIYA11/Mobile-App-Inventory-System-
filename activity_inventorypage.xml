@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212751"
+    tools:context=".InventoryPage">
+
+    <!-- Logo ImageView -->
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/inventory_icon"
+        android:scaleType="fitCenter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+    <!-- Welcome Heading TextView -->
+    <TextView
+        android:id="@+id/textViewWelcomeHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inventory Management System"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/imageViewLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <!-- CardView containing all buttons -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewWelcomeHeading"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Add Item Button -->
+            <Button
+                android:id="@+id/buttonAddItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Item"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Edit Item Button -->
+            <Button
+                android:id="@+id/buttonEditItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit Item"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Delete Item Button -->
+            <Button
+                android:id="@+id/buttonDeleteItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delete Item"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Display Item Button -->
+            <Button
+                android:id="@+id/buttonDisplayItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Display Items"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Help Button -->
+            <Button
+                android:id="@+id/buttonHelp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Help"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Add Item Form Layout -->
+            <LinearLayout
+                android:id="@+id/layoutAddItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_marginBottom="16dp">
+
+                <!-- ItemID EditText -->
+                <EditText
+                    android:id="@+id/editTextItemID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Item ID" />
+
+                <!-- ItemName EditText -->
+                <EditText
+                    android:id="@+id/editTextItemName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Item Name" />
+
+                <!-- Price EditText -->
+                <EditText
+                    android:id="@+id/editTextPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Price" />
+
+                <!-- Quantity EditText -->
+                <EditText
+                    android:id="@+id/editTextQuantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Quantity" />
+
+                <!-- Description EditText -->
+                <EditText
+                    android:id="@+id/editTextDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Description" />
+
+                <!-- Category EditText -->
+                <EditText
+                    android:id="@+id/editTextCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Category" />
+
+                <!-- Save Button -->
+                <Button
+                    android:id="@+id/buttonSaveItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Save Item" />
+            </LinearLayout>
+
+            <!-- Logout Button -->
+            <Button
+                android:id="@+id/buttonLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
